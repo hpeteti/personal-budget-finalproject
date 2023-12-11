@@ -36,7 +36,7 @@ function ConfigureBudgets() {
       const token=localStorage.getItem("token")
       try {
        
-        const response = await axios.get(`http://localhost:4000/check-existing-budget/${userData}/${selectedMonth}/${category}`,{
+        const response = await axios.get(`https://project-mcpv.onrender.com/check-existing-budget/${userData}/${selectedMonth}/${category}`,{
           headers:{
             Authorization:`Bearer ${token}`
           }
@@ -77,7 +77,7 @@ function ConfigureBudgets() {
       console.log(token);
       console.log(monthlyBudget);
       await axios.post(
-        "http://localhost:4000/configure-budgets",
+        "https://project-mcpv.onrender.com/configure-budgets",
         {
           userData,
           monthlyBudget: selectedMonth,
@@ -110,7 +110,7 @@ function ConfigureBudgets() {
 
   return (
     <main className="center" id="main" aria-label="main">
-      <div style={{ width: '300px', margin: 'auto', backgroundColor: '#f9f9f9', border: '1px solid #ccc', borderRadius: '10px', padding: '20px' }}>
+      <div style={{ width: '450px', margin: 'auto', backgroundColor: '#f9f9f9', border: '1px solid #ccc', borderRadius: '10px', padding: '20px' }}>
         <h2 style={{ marginBottom: '20px', fontSize: '20px', textAlign: 'center' }}>Configure Budgets</h2>
   
         <div style={{ marginBottom: '20px' }}>

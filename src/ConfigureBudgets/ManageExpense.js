@@ -28,7 +28,7 @@ function ManageExpense() {
         const userData = localStorage.getItem('userData');
         const token = localStorage.getItem('token');
   
-        const categoriesResponse = await axios.get(`http://localhost:4000/get-categories/${userData}?month=${selectedMonth}`, {
+        const categoriesResponse = await axios.get(`https://project-mcpv.onrender.com/get-categories/${userData}?month=${selectedMonth}`, {
           headers: {
             Authorization: `Bearer ${token}`
           }
@@ -58,7 +58,7 @@ function ManageExpense() {
         console.error('Month, category, and expense amount are required');
         return;
       }
-      await axios.post('http://localhost:4000/add-expense', {
+      await axios.post('https://project-mcpv.onrender.com/add-expense', {
         userData: userData,
         month: selectedMonth,
         category: selectedCategory,
