@@ -110,7 +110,7 @@ function ConfigureBudgets() {
 
   return (
     <main className="center" id="main" aria-label="main">
-      <div style={{ width: '300px', margin: 'auto', backgroundColor: '#f9f9f9', border: '1px solid #ccc', borderRadius: '5px', padding: '20px' }}>
+      <div style={{ width: '300px', margin: 'auto', backgroundColor: '#f9f9f9', border: '1px solid #ccc', borderRadius: '10px', padding: '20px' }}>
         <h2 style={{ marginBottom: '20px', fontSize: '20px', textAlign: 'center' }}>Configure Budgets</h2>
   
         <div style={{ marginBottom: '20px' }}>

@@ -3,7 +3,7 @@ const chalk = require("chalk");
 
 const connectDB = async () => {
   try {
-    const url = 'mongodb://127.0.0.1:27017/project'; //  MongoDB URL
+    const url = 'mongodb+srv://petetiharsha2002:Harsha2002@project.cdvgsno.mongodb.net/project'; //  MongoDB URL
     await mongoose.connect(url, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
