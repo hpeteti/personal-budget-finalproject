@@ -30,7 +30,7 @@ useEffect(() => {
     if (storedExpirationTime && storedExpirationTime > Date.now()) {
 
       intervalIdRef.current = setInterval(() => {
-        console.log("CHEDKING", storedExpirationTime, Date.now());
+        console.log("CHECKINGHARSHA", storedExpirationTime, Date.now());
         const remainingTime = storedExpirationTime - Date.now();
         
         if (remainingTime <= 0) {
@@ -61,7 +61,7 @@ const handleRefresh = () => {
  
   clearInterval(intervalIdRef.current);
   const newIntervalId = setInterval(() => {
-    console.log("CHEDKING222", newExpirationTime, Date.now());
+    console.log("CHECKING", newExpirationTime, Date.now());
     const remainingTime = newExpirationTime - Date.now();
    
     axios.post(`https://project-mcpv.onrender.com/refresh-token/${userData}`)
