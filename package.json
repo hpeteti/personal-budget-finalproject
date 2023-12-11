@@ -57,6 +57,7 @@
     ]
   },
   "devDependencies": {
+    "cypress": "^13.6.1",
     "webpack-cli": "^5.1.4",
     "webpack-node-externals": "^3.0.0"
   }
